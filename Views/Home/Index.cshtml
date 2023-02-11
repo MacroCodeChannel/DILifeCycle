@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>Dependency Injection Lifetime</h3>
+
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    Service Type
+                </th>
+                <th>
+                    First Instance Operation ID 
+                </th>
+                <th>
+                    Second Instance Operation ID
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color:lightslategray">
+                    Singleton
+                </td>
+                <td style="background-color:lightslategray">
+                    @ViewBag.singleton1
+                </td>
+                <td style="background-color:lightslategray">
+                    @ViewBag.singleton2
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color:lightgreen">
+                    Scoped
+                </td>
+                <td style="background-color:lightgreen">
+                    @ViewBag.scoped1
+                </td>
+                <td style="background-color:lightgreen">
+                    @ViewBag.scoped2
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color:lightblue">
+                    Transient
+                </td>
+                <td style="background-color:lightblue">
+                    @ViewBag.transient1
+                </td>
+                <td style="background-color:lightblue">
+                    @ViewBag.transient2
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
